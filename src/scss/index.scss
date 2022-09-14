@@ -1,0 +1,391 @@
+// Импорт
+@import "./dependencies/vars.scss";
+@import "./dependencies/keyframes.scss";
+@import "./dependencies/media.scss";
+@import "./dependencies/tech.scss";
+
+@import "header.scss";
+@import "footer.scss";
+
+// Blocks
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text__title {
+    font-size: $titleSize;
+    font-weight: 700;
+    margin: 0 0 $textMargin 0;
+    align-self: center;
+    position: relative;
+    // &:after {
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     margin-top: 10px;
+    //     width: 100%;
+    //     height: 2px;
+    //     background-color: $subColor;
+    //     border-radius: 2px;
+    // }
+    
+}
+.text__subtitle {
+    font-weight: 400;
+    font-size: $subtitleSize;
+    margin: 0 0 $textMargin 0;
+    line-height: 30px;
+}
+.text__paragraph {
+    font-size: $paragraphSize;
+    font-weight: 300;
+    margin: 0 0 $textMargin 0;
+    line-height: 30px;
+    
+}
+
+// Main
+
+.main {
+    flex: 1 1 auto;
+}
+
+// First-section
+.first-section {
+    margin-top: 80px;
+}
+.first-section__container {
+}
+._container {
+}
+.first-section__slider {
+}
+.slider {
+    display: flex;
+}
+.slider__text {
+}
+.text {
+}
+.text__title {
+}
+.text__subtitle {
+}
+.slider__buttons {
+}
+._button {
+}
+.slider__img {
+}
+._ibg {
+}
+.first-section__buttons {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    
+    & div {
+        cursor: pointer;
+        padding: 5px;
+        flex-grow: 1;
+        color: white;
+    }
+}
+.first_section_1 {
+    background-color: $mainColor;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.first_section_2 {
+    background-color: aquamarine;
+}
+.first_section_3 {
+    background-color: $mainColor;
+}
+.first_section_4 {
+    background-color: $mainColor;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+// About
+.about {
+    margin: 130px 0 $sectionMargin 0;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+}
+._container {
+}
+.about__text {
+}
+.about__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about__buttons_more {
+    margin-top: 20px;
+}
+.about__img {
+    overflow: hidden;
+    max-width: 900px;
+    animation-name: first;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Service
+.service {
+}
+
+.service__container {
+}
+._container {
+}
+.service__text {
+
+}
+.service__table {
+}
+.table {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+}
+.table__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table__img {
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.table__text {
+    & .text__subtitle {
+        font-weight: 500;
+        font-size: $subtitleSize + 6px;
+    }
+    & .text__paragraph {
+        margin: 0 0 15px 0;
+
+    }
+}
+.table__button {
+    margin-top: 30px;
+}
+.table__text_price {
+    color: $subColor;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+
+// Связаться
+.contact {
+    background-color: #222222;
+    padding: 120px;
+}
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+._container {
+}
+.contact__text {
+    color: white;
+}
+
+.contact__form {
+    display: flex;
+    margin: 0px 0px $textMargin 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    & input {
+        background: rgb(255, 255, 255);
+        width: 350px;
+        height: 60px;
+        padding: 10px;
+        margin: 0px 10px 0 0;
+        border-radius: $borderRadius;
+        text-indent: 20px;
+        font-size: $paragraphSize;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+.contact__name {
+
+}
+.contact__button {
+    background-color: $subColor;
+    
+}
+
+// Last works
+.lastWork {
+}
+.lastWork__title {
+}
+.text__title {
+}
+.lastWork__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lastWork__works {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lastWork__el {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    margin: 0 10px 0 0; 
+    &:hover {
+        box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+    }
+}
+.lastWork__img {
+}
+
+.text__subtitle {
+}
+.lastWork__button {
+    margin-top: 20px;
+}
+
+// WhyWe
+.whyWe {
+}
+.whyWe__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+._container {
+}
+.whyWe__title {
+    
+}
+.text__title {
+}
+.whyWe__blocks {
+}
+.whyWe__blocks_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.whyWe__block {
+}
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & div:first-child {
+        margin-right: 20px;
+    }
+
+}
+.block__img {
+    width: 200px;
+    height: 200px;
+}
+._ibg {
+}
+.block__text {
+    & .text__title {
+        font-size: 21px;
+    }
+    & .text__subtitle {
+        font-size: 14px;
+    }
+}
+.text {
+}
+.text__subtitle {
+    line-height: 20px;
+}
+
+// Footer
+.footer {
+    height: 100px;
+    background: black;
+    width: 100%;
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    .menu__item {
+        &:not(:last-child) {
+            padding: 0 10px 0 0;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header__menu, .header__phone {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+
+    // Контейнеры
+    .about__container {
+        flex-direction: column;
+    }
+
+    // Table
+    .table {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+}

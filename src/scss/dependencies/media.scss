@@ -1,0 +1,35 @@
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    .menu__item {
+        &:not(:last-child) {
+            padding: 0 10px 0 0;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header__menu, .header__phone {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+
+    // Контейнеры
+    .about__container {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+}

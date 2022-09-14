@@ -4,9 +4,327 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <!-- Meta -->
+
+    <!-- Стили -->
+    <title>Atwell.web</title>
 </head>
 <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
 
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container _container">
+            <!-- Логотип -->
+            <a href="#" class="header__logo">Atwell.Web</a>
+            <!-- Меню -->
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__item_dropdown">
+                        <a href="" class="menu__link">Услуги</a>
+                        <div class="service-dropdown">
+                            <div class="service-dropdown__container _container"></div>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Портфолио</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Телефон -->
+            <a href="" class="header__phone"><i class="fa-solid fa-phone"></i> +7 (977) 591 82 92</a>
+            
+            <!-- Бургер -->
+            <div class="header__burger">
+                <span></span>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu">
+                <div class="mobile-menu__container _container">
+                    <nav class="mobile-menu__nav">
+                        <ul>
+                            <li>
+                                Главная
+                            </li>
+
+                            <li>
+                                О нас
+                            </li>
+                            <li>
+                                Услуги
+                            </li>
+                            <li>
+                                Портфолио
+                            </li>
+                            <li>
+                                Контакты
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Sider -->
+        <section class="slider">
+            <div class="slider__container _container">
+                <div class="slider__box box">
+                    <div class="box__text text">
+                        <h1 class="text__title">
+                            Разработаем фирменный стиль
+                        </h1>
+                        <div class="box__buttons">
+                            <button class="_button">Выбрать тип сайта</button>
+                            <button class="_button">Выбрать тип сайта</button>
+                        </div>
+                    </div>
+                    <div class="box__img">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <nav class="slider__menu">
+                    <div class="slider__menu_op">1</div>
+                    <div class="slider__menu_op">2</div>
+                    <div class="slider__menu_op">3</div>
+                    <div class="slider__menu_op">4</div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section class="about _section">
+            <div class="about__container _container">
+                <div class="about__text text">
+                    <div class="text__title">О нас</div>    
+                    <div class="text__subtitle">Комплексный подход к разработке и продвижению сайтов для вашего бизнеса.</div>
+                    <div class="text__paragraph">Агенство комплексного маркетинга Atwell занимается созданием продающих сайтов и их продвижением в сети. Наша команда обладает всеми необходимыми профессиональными навыками для разработки и внедрения любых интернет-решений, а именно сайтов-визиток, корпоративных сайтов, landing page, новостных порталов и интернет-магазинов.</div>
+                    <div class="about__buttons">
+                        <button class="about__buttons_more _button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="about__img">
+                    <img class="about__img_img" src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши услуги -->
+        <section class="service _section">
+            <div class="service__container _container">
+                <div class="service__text text">
+                    <div class="text__title">Наши услуги</div>
+                    <div class="text__subtitle">Итак, что Вы получите, обратившись к нам</div>
+                </div>
+                <div class="service__table table">
+
+                    <div class="table__col">
+                        <div class="table__img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="table__text text">
+                            <div class="text__subtitle">Разработка</div>
+                            <div class="text__paragraph">Новейшее ПО</div>
+                            <div class="text__paragraph">Современные технологии</div>
+                            <div class="text__paragraph">Продуманное usability</div>
+                            <div class="text__paragraph">Индивидуальный подход</div>
+                            <div class="text__paragraph">Оформление договора</div>
+                            <div class="table__text_price text__paragraph">от 15000 руб</div>
+                        </div>
+                        <button class="table__button _button">Подробнее</button>
+                    </div>
+
+                    <div class="table__col">
+                        <div class="table__img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="table__text text">
+                            <div class="text__subtitle">Разработка</div>
+                            <div class="text__paragraph">Новейшее ПО</div>
+                            <div class="text__paragraph">Современные технологии</div>
+                            <div class="text__paragraph">Продуманное usability</div>
+                            <div class="text__paragraph">Индивидуальный подход</div>
+                            <div class="text__paragraph">Оформление договора</div>
+                            <div class="table__text_price text__paragraph">от 15000 руб</div>
+                        </div>
+                        <button class="table__button _button">Подробнее</button>
+                    </div>
+
+                    <div class="table__col">
+                        <div class="table__img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="table__text text">
+                            <div class="text__subtitle">Разработка</div>
+                            <div class="text__paragraph">Новейшее ПО</div>
+                            <div class="text__paragraph">Современные технологии</div>
+                            <div class="text__paragraph">Продуманное usability</div>
+                            <div class="text__paragraph">Индивидуальный подход</div>
+                            <div class="text__paragraph">Оформление договора</div>
+                            <div class="table__text_price text__paragraph">от 15000 руб</div>
+                        </div>
+                        <button class="table__button _button">Подробнее</button>
+                    </div>
+
+                    <div class="table__col">
+                        <div class="table__img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="table__text text">
+                            <div class="text__subtitle">Разработка</div>
+                            <div class="text__paragraph">Новейшее ПО</div>
+                            <div class="text__paragraph">Современные технологии</div>
+                            <div class="text__paragraph">Продуманное usability</div>
+                            <div class="text__paragraph">Индивидуальный подход</div>
+                            <div class="text__paragraph">Оформление договора</div>
+                            <div class="table__text_price text__paragraph">от 15000 руб</div>
+                        </div>
+                        <button class="table__button _button">Подробнее</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+                <!-- Почему мы? -->
+                <section class="whyWe _section">
+                    <div class="whyWe__container _container">
+                            <div class="whyWe__title text__title">Почему мы</div>
+                            <div class="whyWe__blocks">
+                                <div class="whyWe__blocks_row">
+                                    <div class="whyWe__block block">
+                                        <div class="block__img _ibg">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="block__text text">
+                                            <div class="text__title">СОВРЕМЕННЫЙ "ДВИЖОК"</div>
+                                            <div class="text__subtitle">Надежная CMS для быстрой и устойчивой работы сайта</div>
+                                        </div>
+                                    </div>
+                                    <div class="whyWe__block block">
+                                        <div class="block__img _ibg">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="block__text text">
+                                            <div class="text__title">СОВРЕМЕННЫЙ "ДВИЖОК"</div>
+                                            <div class="text__subtitle">Надежная CMS для быстрой и устойчивой работы сайта</div>
+                                        </div>
+                                    </div>
+                                    <div class="whyWe__block block">
+                                        <div class="block__img _ibg">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="block__text text">
+                                            <div class="text__title">СОВРЕМЕННЫЙ "ДВИЖОК"</div>
+                                            <div class="text__subtitle">Надежная CMS для быстрой и устойчивой работы сайта</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whyWe__blocks_row">
+                                    <div class="whyWe__block block">
+                                        <div class="block__img _ibg">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="block__text text">
+                                            <div class="text__title">СОВРЕМЕННЫЙ "ДВИЖОК"</div>
+                                            <div class="text__subtitle">Надежная CMS для быстрой и устойчивой работы сайта</div>
+                                        </div>
+                                    </div>
+                                    <div class="whyWe__block block">
+                                        <div class="block__img _ibg">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="block__text text">
+                                            <div class="text__title">СОВРЕМЕННЫЙ "ДВИЖОК"</div>
+                                            <div class="text__subtitle">Надежная CMS для быстрой и устойчивой работы сайта</div>
+                                        </div>
+                                    </div>
+                                    <div class="whyWe__block block">
+                                        <div class="block__img _ibg">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="block__text text">
+                                            <div class="text__title">СОВРЕМЕННЫЙ "ДВИЖОК"</div>
+                                            <div class="text__subtitle">Надежная CMS для быстрой и устойчивой работы сайта</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                    </div>
+                </section>
+
+        <!-- Контакты -->
+        <section class="contact _section">
+            <div class="contact__container _container">
+                <div class="contact__text text">
+                    <div class="text__title">Закажите консультацию по проекту!</div>
+                    <div class="text__subtitle">Получите бесплатную консультацию наших специалистов</div>
+                </div>
+                <form action="" class="contact__form">
+                    <input type="text" class="contact__name" placeholder="Имя">
+                    <input type="text" class="contact__name" placeholder="Телефон">
+                </form>
+                <button class="contact__button _button">отправить</button>
+            </div>
+        </section>
+
+        <!-- last work -->
+        <section class="lastWork _section">
+            <div class="lastWork__container _container">
+                <div class="lastWork__title text__title">Последние работы</div>
+                <div class="lastWork__works">
+                    <div class="lastWork__el">
+                        <div class="lastWork__img _ibg">
+                            <img src="" alt="">
+                        </div>
+                        <div class="text__subtitle">Сайта Евгения Болотного</div>
+                    </div>
+                    <div class="lastWork__el">
+                        <div class="lastWork__img _ibg">
+                            <img src="" alt="">
+                        </div>
+                        <div class="text__subtitle">Сайта Евгения Болотного</div>
+                    </div>
+                    <div class="lastWork__el">
+                        <div class="lastWork__img _ibg">
+                            <img src="" alt="">
+                        </div>
+                        <div class="text__subtitle">Сайта Евгения Болотного</div>
+                    </div>
+                </div>
+                <button class="lastWork__button _button">Последние работы</button>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer"></footer>
+
+    </div>
+    <script src="https://kit.fontawesome.com/e31710bf47.js" crossorigin="anonymous"></script>
 </body>
 </html>
