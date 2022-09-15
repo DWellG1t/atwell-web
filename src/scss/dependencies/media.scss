@@ -9,13 +9,20 @@
 @media (max-width: 991px) {
     .menu__item {
         &:not(:last-child) {
-            padding: 0 10px 0 0;
+            padding: 0 8px 0 0;
         }
     }
+    
+    div.slider__menu_op {
+        font-size: 14px;
+    }
+
+
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 820px) { // 767
+
     .header__menu, .header__phone {
         display: none;
     }
@@ -27,6 +34,23 @@
     .about__container {
         flex-direction: column;
     }
+
+    // lastWork
+    .lastWork__works {
+        flex-direction: column;
+        & .lastWork__el {
+            margin-bottom: 20px;
+        }
+    }
+    // Table
+    .table {
+        flex-wrap: wrap;
+    }
+    .slider__menu {
+        flex-direction: column;
+
+    }
+
 
 }
 
