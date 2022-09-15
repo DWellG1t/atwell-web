@@ -13,7 +13,11 @@
     left: 0;
     top: 0;
     width: 100%;
-
+    transition: 0.7s;
+    transform: translate(0, 0);
+}
+.header.header_active {
+    transform: translate(0, -100%);
 
 }
 .header__container {
@@ -48,7 +52,7 @@
 }
 .menu__link {
     color: inherit;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     transition: 0.3s;
     &:hover {
@@ -85,9 +89,12 @@
 }
 .header__phone {
     color: inherit;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     transition: 0.3s;
+    & i {
+        margin-right: 5px;
+    }
     ._touch & {
         display: none;
     }
