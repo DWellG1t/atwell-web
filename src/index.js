@@ -4,12 +4,13 @@ import "./scss/index.scss";
 import "./ts/header.ts";
 import "./ts/index.ts";
 // Images
-import about from "./img/about.jpg"
+import about from "./img/about.jpg";
+import slider from "./img/slider.jpg";
 
 function addImg() {
     // Slider 
     const Slider = document.querySelectorAll(".box__img_img");
-    for(let el of Slider    ) 
+    for(let el of Slider) 
         el.src = `${about}`;
     // About us
     const About = document.querySelector(".about__img_img");

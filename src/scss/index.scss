@@ -21,6 +21,7 @@
     margin: 0 0 $textMargin 0;
     align-self: center;
     position: relative;
+    
     // &:after {
     //     content: "";
     //     display: block;
@@ -58,9 +59,14 @@
     margin-top: 100px;
 }
 .slider__container {
+
 }
 .slider__box {
+    height: 400px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 .box {
 }
@@ -71,6 +77,7 @@
 .text__title {
 }
 .box__buttons {
+    margin-top: 40px;
 }
 ._button {
 }
@@ -89,7 +96,7 @@
     }
 }
 .slider__menu_op {
-    width: 269px;
+    flex-grow: 1;
     height: 100px;
     background-color: $mainColor;
     text-align: center;
@@ -97,78 +104,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: azure;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
     &:hover {
         background-color: $subColor;
     }
 
 }
 
-// First-section
-.first-section {
-    margin-top: 80px;
-}
-.first-section__container {
-}
-._container {
-}
-.first-section__slider {
-}
-.slider {
-    display: flex;
-}
-.slider__text {
-}
-.text {
-}
-.text__title {
-}
-.text__subtitle {
-}
-.slider__buttons {
-}
-._button {
-}
-.slider__img {
-}
-._ibg {
-}
-.first-section__buttons {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
-    
-    & div {
-        cursor: pointer;
-        padding: 5px;
-        flex-grow: 1;
-        color: white;
-    }
-}
-.first_section_1 {
-    background-color: $mainColor;
-    border-radius: 10px 0 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.first_section_2 {
-    background-color: aquamarine;
-}
-.first_section_3 {
-    background-color: $mainColor;
-}
-.first_section_4 {
-    background-color: $mainColor;
-    border-radius: 0px 10px 10px 0px;
-}
-
-
 // About
 .about {
-    margin: 130px 0 $sectionMargin 0;
 }
 
 .about__container {
@@ -387,9 +335,6 @@
     }
 }
 .text {
-}
-.text__subtitle {
-    line-height: 20px;
 }
 
 // Footer
