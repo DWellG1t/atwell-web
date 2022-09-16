@@ -77,6 +77,17 @@
 .box {
 }
 .box__text {
+    
+    & .text__title {
+        animation-name: slider-text_title;
+        animation-duration: 1.5s;
+        text-align: center; 
+
+    }
+    & .text__subtitle {
+        animation-name: slider-text_subtitle;
+        animation-duration: 1.5s;
+    }
 }
 .text {
 }
@@ -88,6 +99,8 @@
 ._button {
 }
 .box__img {
+    animation-name: slider-img;
+    animation-duration: 1.5s;
 }
 .slider__menu {
     display: flex;
