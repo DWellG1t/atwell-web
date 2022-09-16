@@ -50,16 +50,36 @@
 
 // Main
 
+
+
 .main {
     flex: 1 1 auto;
 }
 
+// Background
+.back__img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+.back__img_img {
+    width: 1000px;
+
+}
+
+
 // Slider
 .slider {
     margin-top: 100px;
-
+    padding: 0 15px;
 }
 .slider__container {    
+    background-color: white;
+    padding-bottom: 40px;
+    border-radius: $borderRadius;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    
 
 }
 .slider__box {
@@ -140,11 +160,17 @@
 
 // About
 .about {
+    padding: 0 15px;
 }
 
 .about__container {
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    padding-bottom: 40px;
+    border-radius: $borderRadius;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    padding: 30px;
 }
 ._container {
 }
@@ -189,7 +215,7 @@
     display: flex;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
-    border-radius: 15px;
+    border-radius: $borderRadius;
     padding: 30px;
 }
 .table__col {

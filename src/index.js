@@ -6,8 +6,12 @@ import "./ts/index.ts";
 // Images
 import about from "./img/about.jpg";
 import slider from "./img/slider.jpg";
+import back from "./img/back.jpg"
 
 function addImg() {
+    // Background
+    const Back = document.querySelector(".back__img_img");
+    Back.src = `${back}`
     // Slider 
     const Slider = document.querySelectorAll(".box__img_img");
     for(let el of Slider) 
