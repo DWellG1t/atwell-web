@@ -62,28 +62,27 @@
     top: 0;
     left: 0;
     z-index: -10;
+    min-width: 100%;
 }
 .back__img_img {
-    width: 1000px;
-
+    object-fit: cover;
 }
 
 
 // Slider
 .slider {
-    margin-top: 100px;
+    margin-top: 120px;
     padding: 0 15px;
 }
 .slider__container {    
     background-color: white;
-    padding-bottom: 40px;
+    padding: 30px;
     border-radius: $borderRadius;
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
     
 
 }
 .slider__box {
-    height: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,6 +92,8 @@
 .slider__box_active {
     display: flex;
 }
+
+
 
 .box {
 }
@@ -107,6 +108,7 @@
     & .text__subtitle {
         animation-name: slider-text_subtitle;
         animation-duration: 1.5s;
+        padding: 40px;
     }
 }
 .text {
@@ -175,6 +177,7 @@
 ._container {
 }
 .about__text {
+    padding: 40px;
 }
 .about__buttons {
     display: flex;
@@ -207,15 +210,20 @@
 ._container {
 }
 .service__text {
-
+}
+.service__block {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    border-radius: $borderRadius;
+    padding-top: 50px;
 }
 .service__table {
 }
 .table {
     display: flex;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
-    border-radius: $borderRadius;
+
     padding: 30px;
 }
 .table__col {
@@ -256,7 +264,8 @@
 // Связаться
 .contact {
     background-color: #222222;
-    padding: 120px;
+    padding: 100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
 }
 .contact__container {
     display: flex;
@@ -301,6 +310,7 @@
 
 // Last works
 .lastWork {
+    padding: 0 15px;
 }
 .lastWork__title {
 }
@@ -311,6 +321,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    background-color: white;
+    border-radius: $borderRadius;
+    padding: 50px;
 }
 .lastWork__works {
     display: flex;
@@ -324,11 +338,15 @@
     justify-content: center;
     transition: 0.5s;
     margin: 0 10px 0 0; 
+    border-radius: $borderRadius;
+    background-color: white;
     &:hover {
-        box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+        box-shadow: 0px 0px 20px rgba(0,0,0, 0.5);
     }
+    padding: 15px;
 }
 .lastWork__img {
+    
 }
 
 .text__subtitle {

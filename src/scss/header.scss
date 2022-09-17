@@ -47,13 +47,13 @@
 }
 .menu__item {
     &:not(:last-child) {
-        padding: 0 30px 0 0;
+        padding: 0 40px 0 0;
     }
 }
 .menu__link {
     color: inherit;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 400;
     transition: 0.3s;
     &:hover {
         color: $subColor;
@@ -89,7 +89,7 @@
 }
 .header__phone {
     color: inherit;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 500;
     transition: 0.3s;
     & i {
@@ -155,15 +155,17 @@
 // Mobile menu
 .mobile-menu {
     position: fixed;
-    top: 80px;
     left: 100%;
     transform: translate(0, 0);
     background-color: rgb(255, 255, 255);
     height: 100%;
     width: 300px;
     padding: 70px 0 0 0;
-    display: block;
     transition: 0.5s;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
 }
 .mobile-menu_active {
     
@@ -182,8 +184,12 @@
     }
     & ul li {
         font-size: $subtitleSize;
+        font-weight: 500;
         &:not(:last-child) {
-            margin: 0 0 20px 0;
+            margin: 0 0 40px 0;
         }
+    }
+    & a {
+        color: inherit;
     }
 }

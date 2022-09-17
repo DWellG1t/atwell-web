@@ -6,7 +6,7 @@ import "./ts/index.ts";
 // Images
 import about from "./img/about.jpg";
 import slider from "./img/slider.jpg";
-import back from "./img/back.jpg"
+import back from "./img/bcj.svg"
 
 function addImg() {
     // Background
