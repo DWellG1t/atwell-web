@@ -6,7 +6,10 @@ import "./ts/index.ts";
 // Images
 import about from "./img/about.jpg";
 import slider from "./img/slider.jpg";
-import back from "./img/bcj.svg"
+import slide from "./img/slide.svg"
+import back from "./img/bcj.svg";
+import space from "./img/space.svg";
+import develop from "./img/develop.svg";
 
 function addImg() {
     // Background
@@ -14,8 +17,8 @@ function addImg() {
     Back.src = `${back}`
     // Slider 
     const Slider = document.querySelectorAll(".box__img_img");
-    for(let el of Slider) 
-        el.src = `${about}`;
+    Slider[2].src = `${slide}`;
+    Slider[0].src = `${develop}`;
     // About us
     const About = document.querySelector(".about__img_img");
     About.src = `${about}`;
